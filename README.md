@@ -13,7 +13,7 @@ The project is divided into two primary analytical components:
 ### Part 1: Spectrometer Data Analysis
 * **Automated Data Processing:** Batch reads and parses spectrometer data from `.ods` (OpenDocument Spreadsheet) files.
 * **Numerical Integration:** Calculates the total integrated fluorescence intensity across a specified wavelength range using the trapezoidal rule.
-* **Rigorous Error Propagation:** Computes absolute measurement uncertainties by combining statistical Poisson noise (shot noise) with instrumental wavelength resolution errors ($\Delta\lambda$).
+* **Rigorous Error Propagation:** Computes absolute measurement uncertainties of statistical Poisson noise (shot noise).
 * **Weighted Linear Fitting:** Performs Weighted Least Squares (WLS) regression on the low-concentration regime to extract the photophysical proportionality constant ($k\epsilon_{\lambda}$), taking into account the calculated error bars.
 * **Data Visualization:** Generates publication-ready dual plots showing both the full concentration range and the isolated linear fit for the first few concentration data points.
 
@@ -44,7 +44,6 @@ To run the scripts, ensure you have the following Python libraries installed:
 3. Configure the physical parameters:
    * `I0`: Incident LED intensity (derived from the reference integration).
    * `l_path`: Optical path length of the cuvette.
-   * `delta_lambda`: Wavelength accuracy/resolution of your spectrometer.
 4. Run the script to output the calculated linear slopes, $k\epsilon_{\lambda}$ constants, and analytical plots.
 
 ### Part 2: Image Analysis
