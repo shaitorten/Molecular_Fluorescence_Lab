@@ -1,4 +1,4 @@
-# Fluorescence Spectroscopy and Image Analysis
+# Characterization of the Beer-Lambert Law in Molecular Fluorescence
 
 This repository contains a Python-based physical chemistry/optics data analysis tool designed to process and analyze the emission spectra of organic fluorophores (Fluorescein, Rhodamine 6G, and Rhodamine B). 
 
